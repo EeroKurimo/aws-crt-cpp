@@ -652,7 +652,7 @@ namespace Aws
                 return packetId;
             }
 
-            MqttClient::MqttClient(Io::ClientBootstrap &bootstrap, Allocator *allocator) noexcept : m_client(nullptr)
+            MqttClient::MqttClient(Io::ClientBootstrap &bootstrap, Allocator *allocator) noexcept
             {
                 m_client =
                     reinterpret_cast<aws_mqtt_client *>(aws_mem_acquire(allocator, sizeof(struct aws_mqtt_client)));

@@ -332,7 +332,7 @@ namespace Aws
                     bool useWebsocket = false) noexcept;
 
               private:
-                aws_mqtt_client *m_client;
+                aws_mqtt_client *m_client = nullptr;
             };
         } // namespace Mqtt
     }     // namespace Crt
