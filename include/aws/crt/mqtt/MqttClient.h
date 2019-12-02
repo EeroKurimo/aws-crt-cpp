@@ -218,7 +218,7 @@ namespace Aws
                 Io::TlsConnectionOptions m_tlsOptions;
                 Io::SocketOptions m_socketOptions;
                 Crt::Optional<Http::HttpClientConnectionProxyOptions> m_proxyOptions;
-                void *m_onAnyCbData;
+                void *m_onAnyCbData = nullptr;
                 bool m_useTls;
                 bool m_useWebsocket;
 

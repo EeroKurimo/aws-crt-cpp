@@ -276,7 +276,7 @@ namespace Aws
                 uint16_t port,
                 const Io::SocketOptions &socketOptions,
                 bool useWebsocket) noexcept
-                : m_owningClient(client), m_onAnyCbData(nullptr), m_useTls(false), m_useWebsocket(useWebsocket)
+                : m_owningClient(client), m_useTls(false), m_useWebsocket(useWebsocket)
             {
                 s_connectionInit(this, hostName, port, socketOptions);
             }
